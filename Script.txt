@@ -1,0 +1,28 @@
+# Script 
+ON: It was a perfectly Normal day and on this perfectly normal day a warrior named Hida left his village and set out to explore the local woods. He grabbed his sword and set out to explore the woods. 
+#### //Coding after about 1-2 min game time read next time
+ON: For some reason after a hours of exploring Hida kept thinking he was going to find something out in the woods, yet would find nothing.
+#### // 1 min later
+ON: Seriously is this all your going to do?? Walk around forever... **Sarcastically say** You could do anything, maybe fish... Maybe start a camp fire and make smores. 
+#### //Coding Possible idea made a way to spawn in a camp fire
+ON: Fine here a fire now are you happy?? will You interact with it?
+ON: Oh I your just going to keep walking. I guess I'll take my campfire and leave.
+#### // Coding: Deletes camp fire.
+ON: Since you didn't like my camp fire maybe this will give some action in your life and become the big  "Hero" you so desire.
+#### // Coding: Spawn goblin
+ON: See now go on murder the goblin and be the hero.
+#### // Coding: Goblin dies:
+ON: good job you killed a goblin he probably had a family and some kids and they called him papa...
+#### // Coding: Spawn in family of goblins
+ON: Here you go! heres the rest of the family for you to murder.... Happy now?
+#### // Coding: Code in boss fight 
+ON: It seems we started out on the wrong foot Hida let me give you a real challenge and make you a true hero..
+#### // Coding: Take to boss level
+ON: On yes you killed The demon Good job now you can return to your village and get the girl.
+#### // Coding: Portal opens in crack
+ON: Oh hey look at that a crack in the program... I mean trees.. We should just carry on back to town.
+#### // Coding: Take Hida to Space ship over watching another Hida running in rat race.
+ON: **Changes to machine** Welcome back test subject:X3774 In appears you've violated your contract again...
+#### // Feedback: Or possible something more of a cliff hanger that end on a punch 
+
+#### // Coding :Omanis music end game.
