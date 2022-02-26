@@ -23,9 +23,10 @@ public abstract class AbstractCharecter : MonoBehaviour
     [SerializeField] protected Animator anim;
     public float currentSpeed;
     // Sounds 
+    public AudioSource audioSource;
     public AudioClip [] attackSounds;
-    public AudioClip[] walkingSounds;
-    public AudioClip[] SpeechSounds;
+    public AudioClip [] walkingSounds;
+    public AudioClip [] SpeechSounds;
     // 2D Detection 
     [SerializeField] private LayerMask groundLayer;
     private BoxCollider2D boxCollider;
@@ -46,10 +47,8 @@ public abstract class AbstractCharecter : MonoBehaviour
     public void attack()
     {
         anim.SetTrigger("Attack");
-        if (walkingSounds.Length < 0)
-        {
-            AudioSource.PlayClipAtPoint(this.attackSounds[0], this.transform.position);
-        }
+        audioSource.PlayOneShot(RandomClip(attackSounds));
+        
     }
     public void movement(int direction)
     {
@@ -64,16 +63,13 @@ public abstract class AbstractCharecter : MonoBehaviour
             charecterScale.x = this.localScale;
         }
         transform.localScale = charecterScale;
-        if (walkingSounds.Length < 0)
-        {
-            AudioSource.PlayClipAtPoint(this.walkingSounds[0], this.transform.position);
-        }
+        audioSource.PlayOneShot(RandomClip(this.walkingSounds));
+        
         
     }
     public void jump()
     {
         anim.SetTrigger("Jump");
-        Fall();
     }
     protected void Fall()
     {
@@ -86,5 +82,9 @@ public abstract class AbstractCharecter : MonoBehaviour
     protected void hitTake()
     {
         anim.SetTrigger("IsHurt");
+    }
+    public AudioClip RandomClip(AudioClip [] audioClipArray)
+    {
+        return audioClipArray[Random.Range(0, audioClipArray.Length)];
     }
 }

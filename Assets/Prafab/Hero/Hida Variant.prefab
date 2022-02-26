@@ -118,6 +118,102 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3903858, y: 0.517995}
   m_EdgeRadius: 0
+--- !u!82 &1385747260
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977760677405596562}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.444
+  m_Pitch: 1.1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 157
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.509
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.75
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &2062375945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,7 +239,7 @@ MonoBehaviour:
   - {x: -0.07653141, y: 0.2699195, z: 0}
   m_ShapePathHash: 619532706
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1222
+  m_InstanceId: -8226
 --- !u!114 &2062375946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,6 +255,7 @@ MonoBehaviour:
   sprite: {fileID: 1977760677405596562}
   anim: {fileID: 1977760677405596561}
   currentSpeed: 5
+  audioSource: {fileID: 1385747260}
   attackSounds:
   - {fileID: 8300000, guid: 6eb8a608c92e9f14f9f7fd6d34a0a7d7, type: 3}
   walkingSounds:
@@ -166,74 +263,22 @@ MonoBehaviour:
   SpeechSounds: []
   groundLayer:
     serializedVersion: 2
-    m_Bits: 96
+    m_Bits: 64
   rb: {fileID: 2062375949}
   jumpVelocity: 2
   health: 100
-  samurai:
-    m_Name: 
-    m_Normal:
-      m_Background: {fileID: 0}
-      m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_Hover:
-      m_Background: {fileID: 0}
-      m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_Active:
-      m_Background: {fileID: 0}
-      m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_Focused:
-      m_Background: {fileID: 0}
-      m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_OnNormal:
-      m_Background: {fileID: 0}
-      m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_OnHover:
-      m_Background: {fileID: 0}
-      m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_OnActive:
-      m_Background: {fileID: 0}
-      m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_OnFocused:
-      m_Background: {fileID: 0}
-      m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_Border:
-      m_Left: 0
-      m_Right: 0
-      m_Top: 0
-      m_Bottom: 0
-    m_Margin:
-      m_Left: 0
-      m_Right: 0
-      m_Top: 0
-      m_Bottom: 0
-    m_Padding:
-      m_Left: 0
-      m_Right: 0
-      m_Top: 0
-      m_Bottom: 0
-    m_Overflow:
-      m_Left: 0
-      m_Right: 0
-      m_Top: 0
-      m_Bottom: 0
-    m_Font: {fileID: 0}
-    m_FontSize: 0
-    m_FontStyle: 0
-    m_Alignment: 0
-    m_WordWrap: 0
-    m_RichText: 1
-    m_TextClipping: 0
-    m_ImagePosition: 0
-    m_ContentOffset: {x: 0, y: 0}
-    m_FixedWidth: 0
-    m_FixedHeight: 0
-    m_StretchWidth: 1
-    m_StretchHeight: 0
+  grunts:
+  - {fileID: 8300000, guid: a93bacd4308fe5243bac8086d8a627fb, type: 3}
+  - {fileID: 8300000, guid: 230081a2f06cc1044bb71a77aafb79e3, type: 3}
+  - {fileID: 8300000, guid: bcda35ae852e0b74fa8aee43f6903769, type: 3}
+  hidaTalking:
+  - {fileID: 8300000, guid: 17ae050e82ddc10408783f2b3a619d3e, type: 3}
+  - {fileID: 8300000, guid: cb67e02d25879cb498123d756f846406, type: 3}
+  - {fileID: 8300000, guid: aa05986e1a17bec45abbf037cbd3c5dc, type: 3}
+  - {fileID: 8300000, guid: cd486b5da0bbb1445acb17311e0fd338, type: 3}
+  - {fileID: 8300000, guid: ff52e92dce4acdc468847ae5eb72c76d, type: 3}
+  - {fileID: 8300000, guid: 8ba96284e8b342e4ab39b8126e28e36f, type: 3}
+  - {fileID: 8300000, guid: cd4068dbc568cfa4180530e6e71654ab, type: 3}
+  deathsound:
+  - {fileID: 8300000, guid: f54465e6a0e6a664faaee70bc4581d62, type: 3}
+  - {fileID: 8300000, guid: e21e79b6052c1214bb547895bd5833dd, type: 3}
